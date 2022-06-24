@@ -26,7 +26,7 @@
  #### Quantitatve Results
 
 | Encoder Input | Encoder Max Len | $$ \alpha $$ | $$ \beta $$ | BERT Score | Rouge Score |
-|:---:|:---:|---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 |truncated|	512 |	- |	-	| 0.6924 | 0.246 |
 |truncated|	1024 |	-	| -	| 0.6904 |0.141 |
 |extracted|	512 |	0.7 |	0.1 |	0.6937 |	0.239 |
