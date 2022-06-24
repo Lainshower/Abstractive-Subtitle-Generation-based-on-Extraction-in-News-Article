@@ -36,13 +36,11 @@
 |extracted|	512 |	0.9 |	0.2 |	0.6916 |	0.243 |
 |extracted|	512 |	0.9 |	0.3 |	0.6925 |	0.239 |
 
- #### Quantitatve Results
- 
+ #### Qualitative Results 
 
 | Reference Title |	올들어 공정위 환급과징금 이자 150억원…대형소송 또 진행중 |
 |:---:|:---:|
 | Reference Subtitle | 10년 소송 끝에 퀄컴 부분 패소…이자가 원금 ⅓로 불어나이자 산정 방식 바뀐 후 최다 액수…"퀄컴 1조 과징금 소송 승소 노력" |
-|:---:|:---:|
   
 | Encoder Input | $$ \alpha $$ | $$ \beta $$ | Generated Subtitle | BERT Score |
 |:---:|:---:|---:|:---:|:---:|
