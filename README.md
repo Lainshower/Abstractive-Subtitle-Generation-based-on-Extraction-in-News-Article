@@ -7,6 +7,7 @@
 뉴스의 부제목의 특성을 고려해 중요문장을 추출한 후에 부제목을 생성하도록 프레임워크를 설계하였습니다.
 
 #### Structure of Framework
+---
 
 ![image](./src/framework.png)
 
@@ -25,6 +26,7 @@
  > $$ f(x) = \alpha \cdot sim_{BERT}(x) + (1-\alpha) \cdot sim_{TF-IDF}(x) + \beta \cdot pos(x) $$ 
  
  #### Quantitatve Results
+ ---
 
 | Encoder Input | Encoder Max Len | $$ \alpha $$ | $$ \beta $$ | BERT Score | Rouge Score |
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -38,6 +40,7 @@
 |extracted|	512 |	0.9 |	0.3 |	0.6925 |	0.239 |
 
  #### Qualitative Results 
+ ---
 
 | Reference Title |	올들어 공정위 환급과징금 이자 150억원…대형소송 또 진행중 |
 |:---:|:---:|
