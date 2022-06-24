@@ -14,16 +14,16 @@
 #### 중요문장 추출을 위해서 고려한 바는 다음과 같습니다.
 
 1. 주제목(title)과 부제목(subtitle)의 유사성
-  EDA결과 뉴스의 부제목은 본문의 어떤문장보다 주제목과 유사하다는 결론을 얻어 
+  [EDA 결과](https://github.com/Lainshower/Abstractive-Subtitle-Generation-based-on-Extraction-in-News-Article/blob/main/dataset/data_analysis.ipynb) 뉴스의 부제목은 본문의 어떤문장보다 주제목과 유사하다는 결론을 얻어 
   뉴스의 주제목과 부제목간의 TF-IDF Cosine Similarity & BERT [CLS] Embedding의 Cosine Similairty를 활용해 lexical & semantic similar한 문장이 중요문장으로 추출하도록 하였습니다.
 
 2. 위치편향
   EDA결과 뉴스의 부제목과 유사한 본문 문장은 앞쪽에 위치한다는 결론을 얻어 
   본문의 앞쪽에 있는 문장들이 중요문장으로 추출될 확률이 높도록 하였습니다.
  
- #### 다음의 수식을 기반으로 중요문장을 추출하였고, [data_analysis.ipynb](https://github.com/Lainshower/Abstractive-Subtitle-Generation-based-on-Extraction-in-News-Article/blob/main/dataset/data_analysis.ipynb)에서 확인이 가능합니다.
+ #### 다음의 수식을 기반으로 중요문장을 추출하였고, [extract_via_cosine_similarity.py](https://github.com/Lainshower/Abstractive-Subtitle-Generation-based-on-Extraction-in-News-Article/blob/main/src/extract_via_cosine_similarity.py) 에서 확인이 가능합니다.
  
- > $$ f(X) = \alpha \cdot sim_{BERT}(x) + (1-\alpha) \cdot sim_{TF-IDF}(x) + \beta \cdot pos(x) $$ 
+ > $$ f(x) = \alpha \cdot sim_{BERT}(x) + (1-\alpha) \cdot sim_{TF-IDF}(x) + \beta \cdot pos(x) $$ 
  
  #### Quantitatve Results
 
