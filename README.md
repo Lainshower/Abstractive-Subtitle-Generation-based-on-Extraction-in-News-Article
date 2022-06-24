@@ -1,5 +1,4 @@
 # Abstractive-Subtitle-Generation-based-on-Extraction-in-News-Article
----
 
 2022 KCC에 학부생 논문으로 제출한 '추출 기반의 뉴스 부제목 생성 프레임워크'에 대한 코드입니다.
 뉴스의 부제목(=Subtitle)을 뉴스의 요약문으로 간주한 후, KoBART를 활용해 부제목을 생성하도록 학습한 프로젝트입니다.
